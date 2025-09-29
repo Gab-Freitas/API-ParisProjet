@@ -1,5 +1,5 @@
 export interface Paris {
-    id: string;
+    id: string | null;
     favori: boolean;
 
     titre_descriptif: string | null;

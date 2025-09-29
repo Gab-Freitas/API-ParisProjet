@@ -1,6 +1,7 @@
 import { Controller, Get, Param, Post, Body, Put, Patch, Delete} from '@nestjs/common';
 import { ParisService } from './paris.service';
 import { Paris } from './Paris';
+import {NotFoundException } from '@nestjs/common';
 
 @Controller('paris')
 export class ParisController {
@@ -12,7 +13,10 @@ export class ParisController {
     }
 
     @Get(':id')
-    findOne(@Param('id') id: string): Paris {
+    findOne(@Param('id') id?: string): Paris {
+        if (!id) {
+            throw new NotFoundException('Id parameter is required');
+        }
         return this.parisService.findOne(id);
     }
 
