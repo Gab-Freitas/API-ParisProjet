@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { BookController } from './book.controller';
-import { BookService } from './book.service';
+import { ParisController } from './paris.controller';
+import { ParisService } from './paris.service';
 import {HttpModule} from "@nestjs/axios";
 
 @Module({
@@ -9,7 +9,7 @@ import {HttpModule} from "@nestjs/axios";
           maxRedirects: 5,
       })
   ],
-  controllers: [BookController],
-  providers: [BookService],
+  controllers: [ParisController],
+  providers: [ParisService],
 })
-export class BookModule {}
+export class ParisModule {}
