@@ -54,7 +54,7 @@ Les fonctionnalités ont été testé avec Postman.
 - Nous avons choisi d’inclure un booléen favori afin de spécifier un projet de rénovation donné.
 - Un autre choix de développement concerne l’identifiant de chaque enregistrement (id), qui est défini aléatoirement à l’aide de la méthode [uuidv](https://www.uuidgenerator.net/version4).
 - Le dataset choisi est ["Paris se transforme"](Paris se transforme), au format JSON, avec des catégories adaptées aux exigences du projet (Titre du descriptif, URL Photo, Coordonnées...).
-- Decidimos hospedar a nossa API em um domínio próprio para facilitar o acesso. [https://parisprojetgcfngb.cleverapps.io/paris](https://parisprojetgcfngb.cleverapps.io/paris)
+- Nous avons décidé d'héberger notre API sur un domaine propre afin d'en faciliter l'accès. [https://parisprojetgcfngb.cleverapps.io/paris](https://parisprojetgcfngb.cleverapps.io/paris)
 
 ## 📂 Structure du projet
 ```
