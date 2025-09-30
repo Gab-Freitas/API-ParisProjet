@@ -1,3 +1,4 @@
+<a name="top"></a>
 # Projet Web - Rénovation urbaines à Paris
 
  **Conception d'applications mobiles - ISMIN**  
@@ -6,13 +7,23 @@ Cours suivi par les étudiants de Mines Saint-Étienne, ISMIN – Master 2 Infor
 Ce projet s’inscrit dans le cadre du cours de développement Web.  
 L’objectif est de **développer une API REST avec NestJS** permettant de gérer et d’exposer des données issues d’un dataset Open Data.
 
+## Sommaire
+- [Prérequis](#prérequis)
+- [How to use](#how-to-use)
+- [Fonctionnalités de l’API](#-fonctionnalités-de-lapi)
+- [Choix de dévéloppement](#choix-de-dévéloppement)
+- [Structure du projet](#-structure-du-projet)
+- [Exemples de requêtes](#exemples-de-requêtes)
+- [Équipe](#équipe)
+
+
 ## Prérequis
 - [Node.js](https://nodejs.org/)
 - Un gestionnaire de packages : `npm` ou `yarn`
 
 ---
 
-## How to use :
+## How to use
    ```bash
     # Cloner le dépôt 
     $ git clone https://github.com/USERNAME/ParisProjet.git
@@ -39,10 +50,11 @@ L’objectif est de **développer une API REST avec NestJS** permettant de gére
 
 Les fonctionnalités ont été testé avec Postman.
 
-## Choix de dévélopment
+## Choix de dévéloppement
 - Nous avons choisi d’inclure un booléen favori afin de spécifier un projet de rénovation donné.
 - Un autre choix de développement concerne l’identifiant de chaque enregistrement (id), qui est défini aléatoirement à l’aide de la méthode [uuidv](https://www.uuidgenerator.net/version4).
 - Le dataset choisi est ["Paris se transforme"](Paris se transforme), au format JSON, avec des catégories adaptées aux exigences du projet (Titre du descriptif, URL Photo, Coordonnées...).
+- Decidimos hospedar a nossa API em um domínio próprio para facilitar o acesso. [https://parisprojetgcfngb.cleverapps.io/paris](https://parisprojetgcfngb.cleverapps.io/paris)
 
 ## 📂 Structure du projet
 ```
@@ -93,10 +105,11 @@ ParisProjet/
   }
 ```
 
-Équipe
+## Équipe
 - Gabriel Freitas
 - Nícolas Botelho
 
+[Back to top](#top)
   
 
   
