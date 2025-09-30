@@ -76,6 +76,9 @@ ParisProjet/
 ### Récupérer tous les projets
 ```
   GET http://localhost:3000/paris
+
+  # Attention: Si ça tourne en local, ce sera avec localhost, mais pour l’utiliser directement il vaut mieux utiliser le lien du domain. 
+  GET https://parisprojetgcfngb.cleverapps.io/paris
 ```
 
 ### Récupérer un projet par son ID
@@ -88,11 +91,16 @@ ParisProjet/
   POST http://localhost:3000/paris
   Content-Type: application/json
   
-  {
-    "id": "9a1644c9-034b-47f6-b379-f95a15b1069b",
-    "name": "Rénovation Place de la République",
-    "description": "Travaux de modernisation"
-  }
+{
+  "titre_descriptif": "Nouvelle piste cyclable",
+  "categorie": "Mobilité",
+  "sous_categorie": "Cyclisme",
+  "adresse": "Boulevard Saint-Germain",
+  "code_postal": "75005",
+  "date_liv": "2025-12-01",
+  "url_pj": "http://monlien.exemple",
+  "geo_point_2d": [48.8529, 2.3500]
+}
 ```
 
 ### Récupérer tous les projets
